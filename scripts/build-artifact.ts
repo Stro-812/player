@@ -10,7 +10,7 @@ import { podcast } from '../src/data/podcast';
 
 const out = 'dist-artifact';
 const audioDir = process.argv[2];
-const env = audioDir ? { ...process.env, VITE_AUDIO_BASE: './audio/' } : process.env;
+const env = { ...process.env, VITE_NO_SW: '1', ...(audioDir ? { VITE_AUDIO_BASE: './audio/' } : {}) };
 execFileSync('npx', ['vite', 'build', '--base=./', `--outDir=${out}`, '--emptyOutDir'], { stdio: 'inherit', env });
 
 if (audioDir) {
