@@ -69,6 +69,8 @@ npm run share -- "$HOME/Desktop/не про бег"    # файлы в папк�
 
 ## Выкладка
 
+Свой сервер: [`docs/SERVER.md`](docs/SERVER.md) — сборка, куда класть MP3, настройки и пример nginx.
+
 Хостинг и хранилище ещё не выбраны. Когда будут выбраны, `npm run deploy` соберёт сайт и выложит `dist/`;
 ключи — только в переменных окружения. Требования к хостингу: HTTPS, `X-Robots-Tag: noindex`;
 к хранилищу: ответ 206 на Range, `Cache-Control: public, max-age=31536000, immutable`.
