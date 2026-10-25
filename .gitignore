@@ -6,3 +6,4 @@ dist/
 *.mp3
 audio/
 .DS_Store
+dist-artifact/

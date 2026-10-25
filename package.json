@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.sw.json",
     "probe": "tsx scripts/probe-audio.ts",
-    "deploy": "echo 'Хостинг ещё не выбран — см. README, раздел «Выкладка»' && exit 1"
+    "deploy": "echo 'Хостинг ещё не выбран — см. README, раздел «Выкладка»' && exit 1",
+    "artifact": "tsx scripts/build-artifact.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

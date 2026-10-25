@@ -28,5 +28,6 @@ window.addEventListener('hashchange', route);
 route();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  void navigator.serviceWorker.register('/sw.js');
+  // В артефакте claude.ai Service Worker запрещён: ошибку регистрации глотаем.
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
