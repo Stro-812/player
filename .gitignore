@@ -4,6 +4,6 @@ dist/
 .env.*
 !.env.example
 *.mp3
-audio/
+/audio/
 .DS_Store
 dist-artifact/
