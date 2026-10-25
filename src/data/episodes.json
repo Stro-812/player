@@ -1,0 +1,111 @@
+{
+  "podcast": {
+    "title": "Не про бег",
+    "author": "Юрий Строфилов",
+    "language": "ru",
+    "artwork": "/cover-1024.jpg",
+    "artworkFeed": "/cover-3000.jpg",
+    "audioBase": "https://storage.invalid/audio/"
+  },
+  "episodes": [
+    {
+      "n": 1,
+      "title": "[Название эпизода 1]",
+      "file": "01.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 2,
+      "title": "[Название эпизода 2]",
+      "file": "02.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 3,
+      "title": "[Название эпизода 3]",
+      "file": "03.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 4,
+      "title": "[Название эпизода 4]",
+      "file": "04.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 5,
+      "title": "[Название эпизода 5]",
+      "file": "05.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 6,
+      "title": "[Название эпизода 6]",
+      "file": "06.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 7,
+      "title": "[Название эпизода 7]",
+      "file": "07.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 8,
+      "title": "[Название эпизода 8]",
+      "file": "08.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 9,
+      "title": "[Название эпизода 9]",
+      "file": "09.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 10,
+      "title": "Калоши",
+      "file": "10.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    },
+    {
+      "n": 11,
+      "title": "[Название эпизода 11]",
+      "file": "11.mp3",
+      "durationSec": 0,
+      "bytes": 0,
+      "chapters": [],
+      "free": false
+    }
+  ]
+}
