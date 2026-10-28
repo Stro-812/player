@@ -3,7 +3,9 @@
 const sw = self as unknown as ServiceWorkerGlobalScope;
 
 const CACHE = 'shell-v1';
-const SHELL = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
+// Пути от папки, где лежит sw.js: сайт может жить не в корне домена.
+const ROOT = new URL('./', sw.location.href).href;
+const SHELL = ['./', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'].map((p) => new URL(p, ROOT).href);
 
 sw.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => sw.skipWaiting()));
@@ -33,10 +35,10 @@ sw.addEventListener('fetch', (e) => {
       fetch(e.request)
         .then((res) => {
           const copy = res.clone();
-          void caches.open(CACHE).then((c) => c.put('/', copy));
+          void caches.open(CACHE).then((c) => c.put(ROOT, copy));
           return res;
         })
-        .catch(async () => (await caches.match('/')) ?? Response.error()),
+        .catch(async () => (await caches.match(ROOT)) ?? Response.error()),
     );
     return;
   }

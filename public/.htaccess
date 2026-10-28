@@ -1,0 +1,11 @@
+# Для Apache (нужен mod_headers). На nginx файл не используется, настройки — в README-DEPLOY.md.
+DirectoryIndex index.html
+AddType application/manifest+json .webmanifest
+
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow"
+  # Страница, Service Worker и манифест — без долгого кэша, иначе обновления не дойдут до телефонов.
+  <FilesMatch "^(index\.html|sw\.js|manifest\.webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

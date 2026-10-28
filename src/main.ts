@@ -34,5 +34,5 @@ route();
 
 // В артефакте claude.ai Service Worker запрещён, там его сборка выключена (VITE_NO_SW).
 if ('serviceWorker' in navigator && import.meta.env.PROD && !import.meta.env.VITE_NO_SW) {
-  navigator.serviceWorker.register('/sw.js').catch(() => {});
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
 }

@@ -7,3 +7,4 @@ dist/
 /audio/
 .DS_Store
 dist-artifact/
+/package/

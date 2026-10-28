@@ -6,6 +6,7 @@
 ## Команды
 
 - `npm run dev` — локальный сервер; `npm test` — Vitest; `npm run typecheck`; `npm run build` — сборка в `dist/` (+ лента, если задан `FEED_SLUG`).
+- `npm run pack` — архив для программистов: собранный сайт + `deploy/README-DEPLOY.md`.
 - `npm run probe -- <папка с MP3>` — длительность и размер в `episodes.json` через ffprobe.
 - `scripts/audio.sh` — команды ffmpeg/ffprobe для MP3. **Перед запуском перекодирования показать команду владельцу.**
 
@@ -29,6 +30,11 @@
 Токены цветов — в `src/ui/styles.css`. Белый на `coral` — только текст от 19 px жирным или от 24 px обычным, мельче — `deep`.
 Нажимаемые элементы ≥ 48 px, главная кнопка во всю ширину, 96 px. Montserrat 800–900 — заголовки, Sofia Sans Extra Condensed 800 — цифры и надпись, Golos Text — текст.
 Иконки и обложки в `public/icons`, `public/cover-*.jpg` — временные (`scripts/make-placeholder-icons.py`), ждут финальных от владельца.
+
+## Домены
+
+Плеер открывается на s10.run и your.s10.run (папка — на выбор программистов). `audioBase` = `/audio/`:
+звук всегда с того домена, где открыт плеер. Все пути сборки относительные (`base: './'`), сайт не привязан к корню домена.
 
 ## Код
 

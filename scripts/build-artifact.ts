@@ -10,18 +10,17 @@ import { podcast } from '../src/data/podcast';
 
 const out = 'dist-artifact';
 const audioDir = process.argv[2];
-const env = { ...process.env, VITE_NO_SW: '1', ...(audioDir ? { VITE_AUDIO_BASE: './audio/' } : {}) };
-execFileSync('npx', ['vite', 'build', '--base=./', `--outDir=${out}`, '--emptyOutDir'], { stdio: 'inherit', env });
+// Внешнее хранилище площадка не пускает (CSP), поэтому доступны только файлы рядом со страницей.
+const files = audioDir ? podcast.episodes.map((e) => e.file).filter((f) => existsSync(join(audioDir, f))) : [];
+const env = { ...process.env, VITE_NO_SW: '1', VITE_AUDIO_BASE: './audio/', VITE_ONLY_FILES: files.join(',') };
+execFileSync('npx', ['vite', 'build', `--outDir=${out}`, '--emptyOutDir'], { stdio: 'inherit', env });
 
-if (audioDir) {
-  mkdirSync(`${out}/audio`, { recursive: true });
-  for (const { file } of podcast.episodes) {
-    const src = join(audioDir, file);
-    if (!existsSync(src)) continue;
-    if (statSync(src).size > 15 * 1024 * 1024) console.warn(`${file} больше 15 МБ — площадка его не примет`);
-    copyFileSync(src, `${out}/audio/${file}`);
-    console.log(`build-artifact: audio/${file}`);
-  }
+if (files.length) mkdirSync(`${out}/audio`, { recursive: true });
+for (const file of files) {
+  const src = join(audioDir!, file);
+  if (statSync(src).size > 15 * 1024 * 1024) console.warn(`${file} больше 15 МБ — площадка его не примет`);
+  copyFileSync(src, `${out}/audio/${file}`);
+  console.log(`build-artifact: audio/${file}`);
 }
 
 for (const f of ['sw.js', 'manifest.webmanifest', 'cover-3000.jpg', 'robots.txt']) rmSync(`${out}/${f}`, { force: true });

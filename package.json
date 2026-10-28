@@ -13,7 +13,8 @@
     "probe": "tsx scripts/probe-audio.ts",
     "deploy": "echo 'Хостинг ещё не выбран — см. README, раздел «Выкладка»' && exit 1",
     "artifact": "tsx scripts/build-artifact.ts",
-    "share": "tsx scripts/share-local.ts"
+    "share": "tsx scripts/share-local.ts",
+    "pack": "tsx scripts/pack.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

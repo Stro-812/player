@@ -25,7 +25,7 @@ describe('buildFeed', () => {
   });
 
   it('enclosure со ссылкой из episodes.json, типом и размером', () => {
-    const url = new URL('10.mp3', podcast.podcast.audioBase).href;
+    const url = new URL('10.mp3', new URL(podcast.podcast.audioBase, 'https://example.org/')).href;
     expect(xml).toMatch(new RegExp(`<enclosure url="${url.replace(/[.?]/g, '\\$&')}" type="audio/mpeg" length="\\d+"/>`));
   });
 

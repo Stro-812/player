@@ -10,7 +10,7 @@ describe('getAudioUrl', () => {
   });
 
   it('по умолчанию берёт audioBase из episodes.json', async () => {
-    expect(await getAudioUrl(ep)).toBe(new URL('10.mp3', podcast.podcast.audioBase).href);
+    expect(await getAudioUrl(ep)).toBe(new URL(`${podcast.podcast.audioBase}10.mp3`, location.href).href);
   });
 
   it('относительный audioBase отсчитывается от адреса сайта', async () => {

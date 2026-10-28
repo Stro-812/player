@@ -5,7 +5,7 @@
     "language": "ru",
     "artwork": "/cover-1024.jpg",
     "artworkFeed": "/cover-3000.jpg",
-    "audioBase": "https://storage.invalid/audio/"
+    "audioBase": "/audio/"
   },
   "episodes": [
     {
@@ -19,91 +19,91 @@
     },
     {
       "n": 2,
-      "title": "[Название эпизода 2]",
+      "title": "Нью-Йорк",
       "file": "02.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 2471,
+      "bytes": 30010117,
       "chapters": [],
       "free": false
     },
     {
       "n": 3,
-      "title": "[Название эпизода 3]",
+      "title": "Колодец",
       "file": "03.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 2429,
+      "bytes": 29507957,
       "chapters": [],
       "free": false
     },
     {
       "n": 4,
-      "title": "[Название эпизода 4]",
+      "title": "Бостон",
       "file": "04.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 3610,
+      "bytes": 43677500,
       "chapters": [],
       "free": false
     },
     {
       "n": 5,
-      "title": "[Название эпизода 5]",
+      "title": "Сестрорецк",
       "file": "05.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 3561,
+      "bytes": 43102169,
       "chapters": [],
       "free": false
     },
     {
       "n": 6,
-      "title": "[Название эпизода 6]",
+      "title": "Абебе Бикила",
       "file": "06.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 5397,
+      "bytes": 65166517,
       "chapters": [],
       "free": false
     },
     {
       "n": 7,
-      "title": "[Название эпизода 7]",
+      "title": "Тюльпаны и пирамиды",
       "file": "07.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 5667,
+      "bytes": 68373998,
       "chapters": [],
       "free": false
     },
     {
       "n": 8,
-      "title": "[Название эпизода 8]",
+      "title": "Берлин",
       "file": "08.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 3657,
+      "bytes": 44247455,
       "chapters": [],
       "free": false
     },
     {
       "n": 9,
-      "title": "[Название эпизода 9]",
+      "title": "Лондон",
       "file": "09.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 4903,
+      "bytes": 68909803,
       "chapters": [],
       "free": false
     },
     {
       "n": 10,
-      "title": "Калоши",
+      "title": "Письма и калоши",
       "file": "10.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 4444,
+      "bytes": 53700442,
       "chapters": [],
       "free": false
     },
     {
       "n": 11,
-      "title": "[Название эпизода 11]",
+      "title": "Чикаго",
       "file": "11.mp3",
-      "durationSec": 0,
-      "bytes": 0,
+      "durationSec": 4830,
+      "bytes": 38998490,
       "chapters": [],
       "free": false
     }

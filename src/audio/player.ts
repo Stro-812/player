@@ -34,8 +34,11 @@ export function onPlayer(fn: (e: PlayerEvent) => void): () => void {
 }
 const emit = (e: PlayerEvent): void => listeners.forEach((fn) => fn(e));
 
+/** В сборке для артефакта — только файлы, положенные рядом со страницей (VITE_ONLY_FILES, через запятую). */
+const onlyFiles = import.meta.env.VITE_ONLY_FILES?.split(',');
+
 /** Файл эпизода загружен и измерен (durationSec заполняет scripts/probe-audio.ts). */
-export const isAvailable = (ep: Episode): boolean => ep.durationSec > 0;
+export const isAvailable = (ep: Episode): boolean => ep.durationSec > 0 && (!onlyFiles || onlyFiles.includes(ep.file));
 
 /** С какого эпизода продолжать: последний, который слушали; если он дослушан — следующий. */
 export function resumeEpisode(): Episode {

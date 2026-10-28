@@ -26,7 +26,8 @@ export function buildFeed(data: PodcastData, opts: FeedOptions): string {
   const items = [...data.episodes]
     .sort((a, b) => a.n - b.n)
     .map((ep, i) => {
-      const url = new URL(ep.file, p.audioBase).href;
+      // audioBase может быть относительным (/audio/) — тогда от адреса сайта.
+      const url = new URL(ep.file, new URL(p.audioBase, `${opts.siteUrl}/`)).href;
       const date = new Date(first.getTime() + i * 86_400_000).toUTCString();
       return `    <item>
       <title>${esc(ep.title)}</title>
