@@ -24,7 +24,8 @@ export function renderEpisodes(root: HTMLElement): () => void {
       .map((ep) => {
         const p = all[ep.n];
         const on = isAvailable(ep);
-        let status = 'Скоро';
+        // Недоступен только в пробной сборке на claude.ai: там нет файлов, кроме положенных рядом со страницей.
+        let status = 'Только на сайте';
         if (on && p?.done) status = 'Прослушан';
         else if (on && p && p.pos > 0) status = `Остановились на ${clock(p.pos)} из ${clock(ep.durationSec)}`;
         else if (on) status = clock(ep.durationSec);
