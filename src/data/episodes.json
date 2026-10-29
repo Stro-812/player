@@ -14,7 +14,20 @@
       "file": "01.mp3",
       "durationSec": 982,
       "bytes": 12144869,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Марафон и поэты",
+          "startSec": 60
+        },
+        {
+          "title": "Гены и тонкая грань",
+          "startSec": 766
+        },
+        {
+          "title": "Пот и плацебо",
+          "startSec": 834
+        }
+      ],
       "free": false
     },
     {
@@ -23,7 +36,16 @@
       "file": "02.mp3",
       "durationSec": 2471,
       "bytes": 30010117,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Нью-Йорк",
+          "startSec": 7
+        },
+        {
+          "title": "Центральный парк и теория разбитых окон",
+          "startSec": 1528
+        }
+      ],
       "free": false
     },
     {
@@ -32,7 +54,20 @@
       "file": "03.mp3",
       "durationSec": 2429,
       "bytes": 29507957,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Тренер и глубокий колодец",
+          "startSec": 20
+        },
+        {
+          "title": "Техника бега и плотнейшая упаковка шаров",
+          "startSec": 538
+        },
+        {
+          "title": "Ящерицы и сила воли",
+          "startSec": 1271
+        }
+      ],
       "free": false
     },
     {
@@ -41,7 +76,24 @@
       "file": "04.mp3",
       "durationSec": 3610,
       "bytes": 43677500,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Термобелье и конопля",
+          "startSec": 0
+        },
+        {
+          "title": "Бостон",
+          "startSec": 1091
+        },
+        {
+          "title": "Чаепитие и патриоты",
+          "startSec": 2910
+        },
+        {
+          "title": "О полумарафоне и кредите на неотложные нужды",
+          "startSec": 3208
+        }
+      ],
       "free": false
     },
     {
@@ -50,7 +102,36 @@
       "file": "05.mp3",
       "durationSec": 3561,
       "bytes": 43102169,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Сестрорецк и революция",
+          "startSec": 0
+        },
+        {
+          "title": "Фаренгейт и жена",
+          "startSec": 676
+        },
+        {
+          "title": "Кортизол и ракетный двигатель",
+          "startSec": 903
+        },
+        {
+          "title": "Эволюция и Subaru WRX",
+          "startSec": 1167
+        },
+        {
+          "title": "Пиво и кости",
+          "startSec": 1905
+        },
+        {
+          "title": "Инсулин и тридцатый километр",
+          "startSec": 2213
+        },
+        {
+          "title": "Израиль и 4:16",
+          "startSec": 2933
+        }
+      ],
       "free": false
     },
     {
@@ -59,7 +140,32 @@
       "file": "06.mp3",
       "durationSec": 5397,
       "bytes": 65166517,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Абебе Бикила и реванш",
+          "startSec": 12
+        },
+        {
+          "title": "Кроссовки и компромиссы",
+          "startSec": 1357
+        },
+        {
+          "title": "Гатчина и сломанная электричка",
+          "startSec": 2453
+        },
+        {
+          "title": "Токио",
+          "startSec": 2847
+        },
+        {
+          "title": "Теннисный мячик и саке",
+          "startSec": 4297
+        },
+        {
+          "title": "Утрехт и теория относительности",
+          "startSec": 4858
+        }
+      ],
       "free": false
     },
     {
@@ -68,7 +174,32 @@
       "file": "07.mp3",
       "durationSec": 5667,
       "bytes": 68373998,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Тюльпаны и пирамиды",
+          "startSec": 8
+        },
+        {
+          "title": "Медленный бег и капилляры",
+          "startSec": 791
+        },
+        {
+          "title": "Пара порогов и немного о пульсе",
+          "startSec": 1366
+        },
+        {
+          "title": "Наркотики и пульт дистанционного управления",
+          "startSec": 2826
+        },
+        {
+          "title": "Пиво, калий и марафонский бег",
+          "startSec": 3974
+        },
+        {
+          "title": "Интервалы и урановые рудники",
+          "startSec": 4347
+        }
+      ],
       "free": false
     },
     {
@@ -77,7 +208,20 @@
       "file": "08.mp3",
       "durationSec": 3657,
       "bytes": 44247455,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Макароны и соглашение о разделе имущества",
+          "startSec": 0
+        },
+        {
+          "title": "Берлин",
+          "startSec": 551
+        },
+        {
+          "title": "Мед без пчел и ниппель Данлопа",
+          "startSec": 2200
+        }
+      ],
       "free": false
     },
     {
@@ -86,7 +230,32 @@
       "file": "09.mp3",
       "durationSec": 4903,
       "bytes": 68909803,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Ризотто и керамические шарики",
+          "startSec": 14
+        },
+        {
+          "title": "Пшеница и спасение человечества",
+          "startSec": 355
+        },
+        {
+          "title": "Мясо и кормовой коэффициент",
+          "startSec": 2113
+        },
+        {
+          "title": "Лондон",
+          "startSec": 2358
+        },
+        {
+          "title": "Кромвель и головы",
+          "startSec": 4678
+        },
+        {
+          "title": "Письма и калоши",
+          "startSec": 4893
+        }
+      ],
       "free": false
     },
     {
@@ -95,7 +264,16 @@
       "file": "10.mp3",
       "durationSec": 4444,
       "bytes": 53700442,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Письма и калоши",
+          "startSec": 0
+        },
+        {
+          "title": "Митохондрии и прогулки",
+          "startSec": 2025
+        }
+      ],
       "free": false
     },
     {
@@ -104,7 +282,24 @@
       "file": "11.mp3",
       "durationSec": 4830,
       "bytes": 38998490,
-      "chapters": [],
+      "chapters": [
+        {
+          "title": "Ярославль и корова",
+          "startSec": 0
+        },
+        {
+          "title": "Чикаго",
+          "startSec": 557
+        },
+        {
+          "title": "Дисклеймер и бег задом",
+          "startSec": 3133
+        },
+        {
+          "title": "Вундеркинды и счастье",
+          "startSec": 3632
+        }
+      ],
       "free": false
     }
   ]
