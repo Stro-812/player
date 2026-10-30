@@ -46,11 +46,13 @@ MP3 в git не попадают (`.gitignore`).
 Скопировать `.env.example` в `.env`, задать `FEED_SLUG` (16 символов) и `SITE_URL`.
 `npm run build` положит `dist/feed-<FEED_SLUG>.xml`. На сайте ссылка не публикуется.
 
-## Пробный сайт на GitHub Pages
+## Сайт книги на GitHub Pages
 
-Каждый push в `main` собирает сайт и выкладывает его на https://stro-812.github.io/player/
-(`.github/workflows/pages.yml`). Звук — с `https://s10.run/audio/`. Включается один раз:
-Settings → Pages → Source: **GitHub Actions**.
+https://stro-812.github.io/player/ — сайт книги из папки `book-site/` (статический, без сборки,
+свой плеер и RSS-лента `podcast.xml`). Каждый push в `main` выкладывает его заново
+(`.github/workflows/pages.yml`); метка `__SITE_URL__` заменяется на адрес Pages при выкладке.
+Для поддомена на своём сервере — та же папка с заменой `__SITE_URL__` на его адрес,
+без `README.md` и `tools/`. Пробный плеер из `src/` на Pages больше не выкладывается.
 
 ## Раздача со своего компьютера
 

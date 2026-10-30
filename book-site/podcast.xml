@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Не про бег</title>
+    <link>__SITE_URL__/</link>
+    <atom:link href="__SITE_URL__/podcast.xml" rel="self" type="application/rss+xml"/>
+    <language>ru</language>
+    <description>Книга Юрия Строфилова «Не про бег» в авторском чтении. 11 эпизодов, около 12 часов.</description>
+    <itunes:author>Юрий Строфилов</itunes:author>
+    <itunes:owner>
+      <itunes:name>Юрий Строфилов</itunes:name>
+      <itunes:email>mail@stro.run</itunes:email>
+    </itunes:owner>
+    <itunes:image href="__SITE_URL__/assets/img/podcast-cover.jpg"/>
+    <itunes:category text="Sports">
+      <itunes:category text="Running"/>
+    </itunes:category>
+    <itunes:type>serial</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Эпизод 1. Поэты</title>
+      <itunes:title>Поэты</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 1. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:01:00 Марафон и поэты<br>00:12:46 Гены и тонкая грань<br>00:13:53 Пот и плацебо</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/01.mp3" length="12144869" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep01</guid>
+      <pubDate>Fri, 30 Oct 2026 09:01:00 +0000</pubDate>
+      <itunes:duration>982</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/01.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 2. Нью-Йорк</title>
+      <itunes:title>Нью-Йорк</itunes:title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 2. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:07 Нью-Йорк<br>00:25:28 Центральный парк и теория разбитых окон</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/02.mp3" length="30010117" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep02</guid>
+      <pubDate>Fri, 30 Oct 2026 09:02:00 +0000</pubDate>
+      <itunes:duration>2471</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/02.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 3. Колодец</title>
+      <itunes:title>Колодец</itunes:title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 3. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:20 Тренер и глубокий колодец<br>00:08:58 Техника бега и плотнейшая упаковка шаров<br>00:21:10 Ящерицы и сила воли</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/03.mp3" length="29507957" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep03</guid>
+      <pubDate>Fri, 30 Oct 2026 09:03:00 +0000</pubDate>
+      <itunes:duration>2429</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/03.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 4. Бостон</title>
+      <itunes:title>Бостон</itunes:title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 4. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:00 Термобелье и конопля<br>00:18:11 Бостон<br>00:48:29 Чаепитие и патриоты<br>00:53:27 О полумарафоне и кредите на неотложные нужды</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/04.mp3" length="43677500" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep04</guid>
+      <pubDate>Fri, 30 Oct 2026 09:04:00 +0000</pubDate>
+      <itunes:duration>3610</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/04.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 5. Сестрорецк</title>
+      <itunes:title>Сестрорецк</itunes:title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 5. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:00 Сестрорецк и революция<br>00:11:15 Фаренгейт и жена<br>00:15:03 Кортизол и ракетный двигатель<br>00:19:26 Эволюция и Subaru WRX<br>00:31:44 Пиво и кости<br>00:36:53 Инсулин и тридцатый километр<br>00:48:53 Израиль и 4:16</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/05.mp3" length="43102169" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep05</guid>
+      <pubDate>Fri, 30 Oct 2026 09:05:00 +0000</pubDate>
+      <itunes:duration>3561</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/05.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 6. Абебе Бикила</title>
+      <itunes:title>Абебе Бикила</itunes:title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 6. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:12 Абебе Бикила и реванш<br>00:22:36 Кроссовки и компромиссы<br>00:40:53 Гатчина и сломанная электричка<br>00:47:26 Токио<br>01:11:36 Теннисный мячик и саке<br>01:20:57 Утрехт и теория относительности</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/06.mp3" length="65166517" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep06</guid>
+      <pubDate>Fri, 30 Oct 2026 09:06:00 +0000</pubDate>
+      <itunes:duration>5398</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/06.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 7. Тюльпаны и пирамиды</title>
+      <itunes:title>Тюльпаны и пирамиды</itunes:title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 7. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:07 Тюльпаны и пирамиды<br>00:13:11 Медленный бег и капилляры<br>00:22:46 Пара порогов и немного о пульсе<br>00:47:06 Наркотики и пульт дистанционного управления<br>01:06:14 Пиво, калий и марафонский бег<br>01:12:27 Интервалы и урановые рудники</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/07.mp3" length="68373998" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep07</guid>
+      <pubDate>Fri, 30 Oct 2026 09:07:00 +0000</pubDate>
+      <itunes:duration>5667</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/07.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 8. Берлин</title>
+      <itunes:title>Берлин</itunes:title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 8. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:00 Макароны и соглашение о разделе имущества<br>00:09:10 Берлин<br>00:36:40 Мед без пчел и ниппель Данлопа</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/08.mp3" length="44247455" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep08</guid>
+      <pubDate>Fri, 30 Oct 2026 09:08:00 +0000</pubDate>
+      <itunes:duration>3657</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/08.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 9. Лондон</title>
+      <itunes:title>Лондон</itunes:title>
+      <itunes:episode>9</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 9. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:14 Ризотто и керамические шарики<br>00:05:54 Пшеница и спасение человечества<br>00:35:12 Мясо и кормовой коэффициент<br>00:39:18 Лондон<br>01:17:58 Кромвель и головы<br>01:21:33 Письма и калоши</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/09.mp3" length="68909803" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep09</guid>
+      <pubDate>Fri, 30 Oct 2026 09:09:00 +0000</pubDate>
+      <itunes:duration>4903</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/09.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 10. Письма и калоши</title>
+      <itunes:title>Письма и калоши</itunes:title>
+      <itunes:episode>10</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 10. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:00 Письма и калоши<br>00:33:44 Митохондрии и прогулки</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/10.mp3" length="53700442" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep10</guid>
+      <pubDate>Fri, 30 Oct 2026 09:10:00 +0000</pubDate>
+      <itunes:duration>4444</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/10.json" type="application/json+chapters"/>
+    </item>
+    <item>
+      <title>Эпизод 11. Чикаго</title>
+      <itunes:title>Чикаго</itunes:title>
+      <itunes:episode>11</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <description><![CDATA[<p>«Не про бег», эпизод 11. Читает автор, Юрий Строфилов.</p><p>Главы:<br>00:00:30 Ярославль и корова<br>00:09:16 Чикаго<br>00:52:13 Дисклеймер и бег задом<br>01:00:32 Вундеркинды и счастье</p>]]></description>
+      <enclosure url="https://your.s10.run/audio/11.mp3" length="38998490" type="audio/mpeg"/>
+      <guid isPermaLink="false">ne-pro-beg-ep11</guid>
+      <pubDate>Fri, 30 Oct 2026 09:11:00 +0000</pubDate>
+      <itunes:duration>4830</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:chapters url="__SITE_URL__/podcast/chapters/11.json" type="application/json+chapters"/>
+    </item>
+  </channel>
+</rss>

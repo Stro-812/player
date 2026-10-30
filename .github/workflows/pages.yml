@@ -1,6 +1,7 @@
-# Пробный сайт на GitHub Pages: собирается при каждом push в main.
-# Звук — с s10.run: на github.io своей папки /audio/ нет.
-name: Пробный сайт (GitHub Pages)
+# Сайт книги «Не про бег» на GitHub Pages: папка book-site/ как есть, без сборки.
+# Метка __SITE_URL__ заменяется на адрес Pages при выкладке; в репозитории она остаётся,
+# чтобы тот же сайт можно было выложить на поддомен с другим адресом.
+name: Сайт книги (GitHub Pages)
 
 on:
   push:
@@ -16,23 +17,24 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  SITE_URL: https://stro-812.github.io/player
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
-        env:
-          VITE_AUDIO_BASE: https://s10.run/audio/
+      - name: Подставить адрес сайта
+        run: |
+          mkdir _site
+          cp -r book-site/. _site/
+          rm -rf _site/README.md _site/tools   # служебное, на сайт не нужно
+          grep -rl '__SITE_URL__' _site | xargs sed -i "s#__SITE_URL__#${SITE_URL}#g"
+          ! grep -rn '__SITE_URL__\|__OWNER_EMAIL__' _site
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: _site
 
   deploy:
     needs: build

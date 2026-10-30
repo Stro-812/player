@@ -1,0 +1,101 @@
+[
+  {
+    "episode": 1,
+    "title": "Поэты",
+    "url": "https://your.s10.run/audio/01.mp3",
+    "duration_seconds": 981.9,
+    "duration": "00:16:21",
+    "size_bytes": 12144869,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 2,
+    "title": "Нью-Йорк",
+    "url": "https://your.s10.run/audio/02.mp3",
+    "duration_seconds": 2470.8,
+    "duration": "00:41:10",
+    "size_bytes": 30010117,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 3,
+    "title": "Колодец",
+    "url": "https://your.s10.run/audio/03.mp3",
+    "duration_seconds": 2429.2,
+    "duration": "00:40:29",
+    "size_bytes": 29507957,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 4,
+    "title": "Бостон",
+    "url": "https://your.s10.run/audio/04.mp3",
+    "duration_seconds": 3609.6,
+    "duration": "01:00:09",
+    "size_bytes": 43677500,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 5,
+    "title": "Сестрорецк",
+    "url": "https://your.s10.run/audio/05.mp3",
+    "duration_seconds": 3560.7,
+    "duration": "00:59:20",
+    "size_bytes": 43102169,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 6,
+    "title": "Абебе Бикила",
+    "url": "https://your.s10.run/audio/06.mp3",
+    "duration_seconds": 5397.5,
+    "duration": "01:29:57",
+    "size_bytes": 65166517,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 7,
+    "title": "Тюльпаны и пирамиды",
+    "url": "https://your.s10.run/audio/07.mp3",
+    "duration_seconds": 5666.8,
+    "duration": "01:34:26",
+    "size_bytes": 68373998,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 8,
+    "title": "Берлин",
+    "url": "https://your.s10.run/audio/08.mp3",
+    "duration_seconds": 3656.6,
+    "duration": "01:00:56",
+    "size_bytes": 44247455,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 9,
+    "title": "Лондон",
+    "url": "https://your.s10.run/audio/09.mp3",
+    "duration_seconds": 4903.4,
+    "duration": "01:21:43",
+    "size_bytes": 68909803,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 10,
+    "title": "Письма и калоши",
+    "url": "https://your.s10.run/audio/10.mp3",
+    "duration_seconds": 4444.2,
+    "duration": "01:14:04",
+    "size_bytes": 53700442,
+    "mime": "audio/mpeg"
+  },
+  {
+    "episode": 11,
+    "title": "Чикаго",
+    "url": "https://your.s10.run/audio/11.mp3",
+    "duration_seconds": 4829.5,
+    "duration": "01:20:29",
+    "size_bytes": 38998490,
+    "mime": "audio/mpeg"
+  }
+]
