@@ -54,10 +54,6 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .on-coral { background: var(--coral); color: #FFFFFF; }
 
 /* Отсечка дистанции над разделом */
-.km { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); }
-.km::after { content: ""; flex: 1; height: 1px; background: currentColor; opacity: 0.9; }
-.dark .km { color: var(--pale); }
-.on-coral .km { color: var(--ink-on-coral); }
 
 .display { font-family: var(--display); font-weight: 800; text-transform: uppercase; line-height: 0.9; letter-spacing: -0.005em; }
 .h2 { font-size: clamp(60px, 8vw, 112px); }
