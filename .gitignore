@@ -9,5 +9,5 @@ dist/
 dist-artifact/
 /package/
 /scripts/chapters/.venv/
-ne-pro-beg-chapters.json
-chapters-audio.json
+/ne-pro-beg-chapters.json
+/chapters-audio.json
