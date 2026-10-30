@@ -113,6 +113,7 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 /* Старт */
 .split { display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: flex-start; }
 .start__big { flex: 1 1 300px; min-width: 0; }
+.start__img { display: block; width: 100%; height: auto; margin-bottom: 24px; }
 .start__num { font-family: var(--display); font-weight: 900; font-size: clamp(140px, 16vw, 230px); line-height: 0.85; color: var(--coral); }
 .start__place { margin-top: 18px; font-family: var(--mono); font-size: 15px; color: var(--muted); }
 .start__text { flex: 2 1 520px; min-width: 0; }
