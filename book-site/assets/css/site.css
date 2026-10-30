@@ -108,11 +108,17 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 
 /* Старт */
 .split { display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: flex-start; }
+#start .split { align-items: stretch; }
 .start__big { flex: 1 1 300px; min-width: 0; }
-.start__img { display: block; width: 100%; height: auto; margin-bottom: 24px; }
-.start__num { font-family: var(--display); font-weight: 900; font-size: clamp(140px, 16vw, 230px); line-height: 0.85; color: var(--coral); }
-.start__place { margin-top: 18px; font-family: var(--mono); font-size: 15px; color: var(--muted); }
-.start__text { flex: 2 1 520px; min-width: 0; }
+.start__img { display: block; width: 100%; height: auto; }
+.start__place { margin-top: 14px; font-family: var(--mono); font-size: 15px; color: var(--muted); }
+.start__text { flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; }
+/* На десктопе блок прижат к низу колонки: низ цифры на уровне низа картинки.
+   Когда колонки встают друг под друга, auto даёт 0 — остаётся отступ 40px. */
+.start__finish { margin-top: auto; padding-top: 40px; }
+.start__num { font-family: var(--display); font-weight: 900; font-size: clamp(120px, 12vw, 200px); line-height: 0.85; color: var(--coral); position: relative; top: 0.12em; }
+/* Глифы шрифта кончаются на 0,12em выше рамки строки: сдвиг ставит низ цифр вровень с низом картинки. */
+.start__finish .start__finish-note { margin-top: 14px; max-width: none; font-family: var(--mono); font-size: 15px; color: var(--muted); }
 .start__text h2 { font-size: clamp(48px, 6vw, 76px); margin-bottom: 28px; }
 .start__text p { font-size: 20px; max-width: 62ch; }
 .start__text p + p { margin-top: 18px; }
