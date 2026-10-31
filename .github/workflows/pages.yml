@@ -32,6 +32,15 @@ jobs:
           rm -rf _site/README.md _site/tools   # служебное, на сайт не нужно
           grep -rl '__SITE_URL__' _site | xargs sed -i "s#__SITE_URL__#${SITE_URL}#g"
           ! grep -rn '__SITE_URL__\|__OWNER_EMAIL__' _site
+      - name: Версия у стилей и скриптов
+        # К ссылкам на site.css, site.js и data.js дописывается ?v=<хеш файла>: после правки адрес
+        # меняется, и браузер не берёт старую версию из кэша (иначе новая разметка ломается о старые стили).
+        run: |
+          for f in css/site.css js/site.js js/data.js; do
+            v=$(sha256sum "_site/assets/$f" | cut -c1-10)
+            grep -rlF "assets/$f\"" _site --include=*.html | xargs sed -i "s#assets/$f\"#assets/$f?v=$v\"#g"
+          done
+          grep -rhoE 'assets/(css|js)/[a-z]+\.(css|js)[^"]*' _site --include=*.html | sort | uniq -c
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
