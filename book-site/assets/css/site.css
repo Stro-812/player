@@ -148,14 +148,40 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .star__listen small { font-family: var(--mono); font-size: 14px; font-weight: 400; color: var(--on-dark-muted); }
 
 /* Пары */
-.pairs { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; }
-.pair { flex: 1 1 280px; min-width: 0; min-height: 240px; text-align: left; cursor: pointer; border: 2px solid var(--ink); border-radius: 4px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; background: #FFFFFF; color: var(--ink); transition: background-color 0.18s ease, color 0.18s ease; }
-.pair[aria-expanded="true"] { background: var(--ink); color: #FFFFFF; }
-.pair__no { font-family: var(--mono); font-size: 14px; font-weight: 600; }
-.pair__title { font-family: var(--display); font-weight: 800; font-size: 36px; line-height: 0.95; text-transform: uppercase; }
-.pair__reveal { font-size: 17px; line-height: 1.55; }
-.pair__hint { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 14px; color: var(--muted); }
-.pair[aria-expanded="true"] .pair__hint { display: none; }
+/* Пары: игра «одна пара за раз». Положение рисунков (--l, --w, --h) — из PAIRS.md. */
+.pairs-game { margin-top: 48px; }
+.pairs-stage { border-top: 1px solid var(--ink); padding-top: 28px; touch-action: pan-y; }
+.pair-no { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); margin-bottom: 20px; }
+.pair-wrap { position: relative; display: flex; align-items: center;
+             font-size: clamp(56px, 7.5vw, 124px); min-height: var(--h); }
+.pair-art  { position: absolute; left: var(--l); top: 50%; transform: translateY(-50%);
+             width: var(--w); height: auto; z-index: 0; pointer-events: none; }
+.pair-words { position: relative; z-index: 1; margin: 0; font-family: var(--display);
+              font-weight: 800; text-transform: uppercase; line-height: 0.86; color: var(--ink); }
+/* Фокус ставится на слова после «Следующей пары», чтобы экранный диктор прочитал новую пару; рамка не нужна. */
+.pair-words:focus { outline: none; }
+.pair-word { display: block; white-space: pre-line; font-size: 1em; }
+.pair-and  { display: block; margin: 10px 0 8px; font-size: clamp(30px, 3.2vw, 52px);
+             font-weight: 700; text-transform: none; color: var(--coral); }
+.pair-q { margin-top: 32px; font-size: 20px; }
+.pair-show { margin-top: 16px; }
+.pair-answer p { margin-top: 24px; font-size: 20px; line-height: 1.55; max-width: 62ch; }
+.pair-listen { margin-top: 14px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--coral-deep); font-size: 17px; font-weight: 600; }
+.pair-listen small { font-family: var(--mono); font-size: 14px; font-weight: 400; color: var(--muted); }
+.pairs-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 40px; }
+.pairs-count { font-family: var(--mono); font-size: 14px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 760px) {
+  .pair-wrap { min-height: 60vw; }
+  .pair-art  { left: auto; right: -4vw; width: auto; height: auto;
+               max-width: 78vw; max-height: 60vw; }
+  .pairs-nav { gap: 6px; }
+  .pairs-nav .btn { padding: 0 10px; font-size: 13px; gap: 6px; white-space: nowrap; }
+  .pairs-count { font-size: 12px; }
+}
+@media (max-width: 380px) {
+  .pairs-nav .btn { padding: 0 7px; font-size: 12px; gap: 4px; }
+  .pairs-count { font-size: 11px; }
+}
 .all-pairs { margin-top: 56px; border-top: 1px solid var(--ink); padding-top: 20px; }
 .all-pairs h3 { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); margin-bottom: 12px; }
 .all-pairs p { font-size: 16px; line-height: 1.9; color: #4A3F3C; }

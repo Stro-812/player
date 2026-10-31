@@ -3,15 +3,63 @@
 (function () {
   'use strict';
 
-  /* ---------- Пары: карточки переворачиваются ---------- */
-  Array.prototype.forEach.call(document.querySelectorAll('.pair'), function (btn) {
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      btn.setAttribute('aria-expanded', String(open));
-      var reveal = btn.querySelector('.pair__reveal');
-      if (reveal) reveal.hidden = !open;
+  /* ---------- Пары: одна пара за раз ---------- */
+  (function () {
+    var game = document.querySelector('.pairs-game');
+    if (!game) return;
+    var stage = game.querySelector('.pairs-stage');
+    var cards = Array.prototype.slice.call(stage.querySelectorAll('.pair-card'));
+    var count = game.querySelector('.pairs-count');
+    var idx = 0;
+
+    function reset(card) {
+      card.querySelector('.pair-answer').hidden = true;
+      card.querySelector('.pair-show').hidden = false;
+    }
+    // Переход по кругу; ответ новой пары снова скрыт.
+    function show(i, focus) {
+      cards[idx].hidden = true;
+      idx = (i + cards.length) % cards.length;
+      reset(cards[idx]);
+      cards[idx].hidden = false;
+      count.textContent = (idx + 1) + ' из ' + cards.length;
+      if (focus) cards[idx].querySelector('.pair-words').focus({ preventScroll: true });
+    }
+
+    cards.forEach(function (card) {
+      card.querySelector('.pair-show').addEventListener('click', function () {
+        this.hidden = true;
+        card.querySelector('.pair-answer').hidden = false;
+      });
     });
-  });
+    game.querySelector('.pairs-prev').addEventListener('click', function () { show(idx - 1, false); });
+    game.querySelector('.pairs-next').addEventListener('click', function () { show(idx + 1, true); });
+
+    // Стрелки клавиатуры — когда раздел на экране и фокус не в поле ввода или ползунке.
+    var inView = false;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { inView = es[0].isIntersecting; }, { threshold: 0.4 }).observe(stage);
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      var t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return;
+      if (!inView && !game.contains(t)) return;
+      e.preventDefault();
+      show(idx + (e.key === 'ArrowRight' ? 1 : -1), e.key === 'ArrowRight');
+    });
+
+    // Свайп на телефоне.
+    var x0 = null, y0 = 0;
+    stage.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    stage.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) show(idx + (dx < 0 ? 1 : -1), dx < 0);
+    }, { passive: true });
+  })();
 
   /* ---------- Цитаты: поделиться ---------- */
   Array.prototype.forEach.call(document.querySelectorAll('.share'), function (btn) {

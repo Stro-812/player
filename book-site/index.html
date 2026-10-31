@@ -201,18 +201,190 @@
 <section id="pairs" class="section" aria-labelledby="pairs-h">
   <div class="wrap">
     <h2 id="pairs-h" class="display h2">Пары</h2>
-    <p class="lead">39 глав книги названы парами слов, которые обычно не встречаются вместе. Каждая начинается с истории, далёкой от бега, и приходит к физиологии или к голове бегуна. Угадайте связь, потом переверните карточку.</p>
-    <div class="pairs">
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 6</span><span class="pair__title">Тренер и глубокий колодец</span><span class="pair__reveal" hidden>Алиса падает в колодец и не может определить свою скорость. Гёдель доказал, что систему нельзя непротиворечиво оценить изнутри. Бегуну нужен взгляд снаружи, то есть тренер.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 8</span><span class="pair__title">Ящерицы и сила воли</span><span class="pair__reveal" hidden>В каждом из нас живут ящерица, хомяк и человек: рептильный мозг, лимбическая система и префронтальная кора. Сила воли — запас энергии, и тренировки его увеличивают.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 12</span><span class="pair__title">О полумарафоне и кредите на неотложные нужды</span><span class="pair__reveal" hidden>Молочная кислота — долг перед организмом. Два быстрых километра в начале полумарафона обрекают на 19 километров медленных страданий.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 7</span><span class="pair__title">Техника бега и плотнейшая упаковка шаров</span><span class="pair__reveal" hidden>Шары ложатся плотнее всего, если коробку долго трясти. Своя техника находится так же: экспериментами, пока каждый шарик не встанет в лунку.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 27</span><span class="pair__title">Медленный бег и капилляры</span><span class="pair__reveal" hidden>Лук для супа нельзя торопить огнём, он пригорит. Капилляры растут по тому же рецепту.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 15</span><span class="pair__title">Кортизол и ракетный двигатель</span><span class="pair__reveal" hidden>Кортизол не даёт топливу взорваться и одновременно подавляет иммунитет. Поэтому с вирусом тренироваться нельзя.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 31</span><span class="pair__title">Интервалы и урановые рудники</span><span class="pair__reveal" hidden>История интервального бега от Вольдемара Гершлера до Эмиля Затопека. После Пражской весны четырёхкратный олимпийский чемпион работал буровиком в Яхимове, на родине чешского урана.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 40</span><span class="pair__title">Письма и калоши</span><span class="pair__reveal" hidden>Утята Конрада Лоренца ходили за калошами. Каждое входящее письмо — такие калоши для ваших мыслей.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 45</span><span class="pair__title">Вундеркинды и счастье</span><span class="pair__reveal" hidden>Пол Морфи выигрывал комбинациями и проиграл жизнь. Джону Сперлингу полвека говорили, что он неудачник. Ежедневная пробежка — позиционная игра.</span><span class="pair__hint">Перевернуть</span></button>
-      <button type="button" class="pair" aria-expanded="false"><span class="pair__no">Глава 32</span><span class="pair__title">Макароны и соглашение о разделе имущества</span><span class="pair__reveal" hidden>Инструкция на последнюю неделю перед марафоном: от бритья подмышек до вазелина на старте и бумажки с претензиями жены.</span><span class="pair__hint">Перевернуть</span></button>
+    <p class="lead">39 глав книги названы парами слов, которые обычно не встречаются вместе. Угадайте, что их связывает.</p>
+    <div class="pairs-game">
+      <div class="pairs-stage" aria-live="polite">
+      <article class="pair-card" id="pair-6" aria-label="Пара 1 из 10">
+        <p class="pair-no">Глава 6</p>
+        <div class="pair-wrap" style="--l: 6em; --w: 3.7em; --h: 3em">
+          <img class="pair-art" src="assets/img/pairs/ch06.webp" width="1200" height="969" alt="" aria-hidden="true" loading="eager">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Тренер</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">глубокий колодец</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Алиса падает в колодец и не может определить свою скорость. Гёдель доказал, что систему нельзя непротиворечиво оценить изнутри. Бегуну нужен взгляд снаружи, то есть тренер.</p>
+          <a class="pair-listen" href="#listen" data-ep="3" data-t="20">Слушать главу <small>эпизод 3, 00:00:20</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-8" aria-label="Пара 2 из 10" hidden>
+        <p class="pair-no">Глава 8</p>
+        <div class="pair-wrap" style="--l: 3.2em; --w: 6.4em; --h: 4.3em">
+          <img class="pair-art" src="assets/img/pairs/ch08.webp" width="1200" height="808" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Ящерицы</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">сила воли</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>В каждом из нас живут ящерица, хомяк и человек: рептильный мозг, лимбическая система и префронтальная кора. Сила воли — запас энергии, и тренировки его увеличивают.</p>
+          <a class="pair-listen" href="#listen" data-ep="3" data-t="1270">Слушать главу <small>эпизод 3, 00:21:10</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-12" aria-label="Пара 3 из 10" hidden>
+        <p class="pair-no">Глава 12</p>
+        <div class="pair-wrap" style="--l: 6.9em; --w: 2.9em; --h: 2.7em">
+          <img class="pair-art" src="assets/img/pairs/ch12.webp" width="1000" height="918" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">О полумарафоне</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">кредите на
+неотложные нужды</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Молочная кислота — долг перед организмом. Два быстрых километра в начале полумарафона обрекают на 19 километров медленных страданий.</p>
+          <a class="pair-listen" href="#listen" data-ep="4" data-t="3207">Слушать главу <small>эпизод 4, 00:53:27</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-7" aria-label="Пара 4 из 10" hidden>
+        <p class="pair-no">Глава 7</p>
+        <div class="pair-wrap" style="--l: 5.5em; --w: 4.3em; --h: 2.3em">
+          <img class="pair-art" src="assets/img/pairs/ch07.webp" width="1000" height="519" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Техника бега</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">плотнейшая
+упаковка шаров</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Шары ложатся плотнее всего, если коробку долго трясти. Своя техника находится так же: экспериментами, пока каждый шарик не встанет в лунку.</p>
+          <a class="pair-listen" href="#listen" data-ep="3" data-t="538">Слушать главу <small>эпизод 3, 00:08:58</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-27" aria-label="Пара 5 из 10" hidden>
+        <p class="pair-no">Глава 27</p>
+        <div class="pair-wrap" style="--l: 5.05em; --w: 4.2em; --h: 4.45em">
+          <img class="pair-art" src="assets/img/pairs/ch27.webp" width="1000" height="1056" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Медленный бег</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">капилляры</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Лук для супа нельзя торопить огнём, он пригорит. Капилляры растут по тому же рецепту.</p>
+          <a class="pair-listen" href="#listen" data-ep="7" data-t="791">Слушать главу <small>эпизод 7, 00:13:11</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-15" aria-label="Пара 6 из 10" hidden>
+        <p class="pair-no">Глава 15</p>
+        <div class="pair-wrap" style="--l: 6.85em; --w: 2.87em; --h: 3.8em">
+          <img class="pair-art" src="assets/img/pairs/ch15.webp" width="685" height="907" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Кортизол</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">ракетный двигатель</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Кортизол не даёт топливу взорваться и одновременно подавляет иммунитет. Поэтому с вирусом тренироваться нельзя.</p>
+          <a class="pair-listen" href="#listen" data-ep="5" data-t="903">Слушать главу <small>эпизод 5, 00:15:03</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-31" aria-label="Пара 7 из 10" hidden>
+        <p class="pair-no">Глава 31</p>
+        <div class="pair-wrap" style="--l: 3.55em; --w: 6.1em; --h: 4.1em">
+          <img class="pair-art" src="assets/img/pairs/ch31.webp" width="1100" height="737" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Интервалы</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">урановые
+рудники</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>История интервального бега от Вольдемара Гершлера до Эмиля Затопека. После Пражской весны четырёхкратный олимпийский чемпион работал буровиком в Яхимове, на родине чешского урана.</p>
+          <a class="pair-listen" href="#listen" data-ep="7" data-t="4347">Слушать главу <small>эпизод 7, 01:12:27</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-40" aria-label="Пара 8 из 10" hidden>
+        <p class="pair-no">Глава 40</p>
+        <div class="pair-wrap" style="--l: 2.45em; --w: 6.1em; --h: 4.3em">
+          <img class="pair-art" src="assets/img/pairs/ch40.webp" width="1100" height="774" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Письма</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">калоши</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Утята Конрада Лоренца ходили за калошами. Каждое входящее письмо — такие калоши для ваших мыслей.</p>
+          <a class="pair-listen" href="#listen" data-ep="10" data-t="0">Слушать главу <small>эпизод 10, 00:00:00</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-45" aria-label="Пара 9 из 10" hidden>
+        <p class="pair-no">Глава 45</p>
+        <div class="pair-wrap" style="--l: 4.55em; --w: 2.03em; --h: 4.1em">
+          <img class="pair-art" src="assets/img/pairs/ch45.webp" width="800" height="1616" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Вундеркинды</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">счастье</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Пол Морфи выигрывал комбинациями и проиграл жизнь. Джону Сперлингу полвека говорили, что он неудачник. Ежедневная пробежка — позиционная игра.</p>
+          <a class="pair-listen" href="#listen" data-ep="11" data-t="3632">Слушать главу <small>эпизод 11, 01:00:32</small></a>
+        </div>
+      </article>
+      <article class="pair-card" id="pair-32" aria-label="Пара 10 из 10" hidden>
+        <p class="pair-no">Глава 32</p>
+        <div class="pair-wrap" style="--l: 3.95em; --w: 5.7em; --h: 4.2em">
+          <img class="pair-art" src="assets/img/pairs/ch32.webp" width="1100" height="810" alt="" aria-hidden="true" loading="lazy">
+          <h3 class="pair-words" tabindex="-1">
+            <span class="pair-word">Макароны</span>
+            <span class="pair-and">и</span>
+            <span class="pair-word">соглашение
+о разделе
+имущества</span>
+          </h3>
+        </div>
+        <p class="pair-q">Что между ними общего?</p>
+        <button type="button" class="btn btn--ink pair-show">Показать связь</button>
+        <div class="pair-answer" hidden>
+          <p>Инструкция на последнюю неделю перед марафоном: от бритья подмышек до вазелина на старте и бумажки с претензиями жены.</p>
+          <a class="pair-listen" href="#listen" data-ep="8" data-t="0">Слушать главу <small>эпизод 8, 00:00:00</small></a>
+        </div>
+      </article>
+      </div>
+      <div class="pairs-nav">
+        <button type="button" class="btn btn--line pairs-prev">← Предыдущая</button>
+        <span class="pairs-count">1 из 10</span>
+        <button type="button" class="btn btn--line pairs-next">Следующая пара →</button>
+      </div>
     </div>
     <div class="all-pairs">
       <h3>Все 39 пар</h3>
