@@ -62,19 +62,22 @@
   })();
 
   /* ---------- Цитаты: поделиться ---------- */
-  Array.prototype.forEach.call(document.querySelectorAll('.share'), function (btn) {
+  Array.prototype.forEach.call(document.querySelectorAll('.q-share'), function (btn) {
     btn.addEventListener('click', function () {
-      var q = btn.parentNode.querySelector('blockquote');
-      var text = (q ? q.textContent.trim() : '') + ' — Юрий Строфилов, «Не про бег»';
-      var url = location.origin + location.pathname;
+      var fig = btn.closest('.q');
+      var n = btn.getAttribute('data-chapter');
+      var quote = fig.querySelector('blockquote').textContent.replace(/\s+/g, ' ').trim();
+      var text = quote + ' — Юрий Строфилов, «Не про бег», глава ' + n;
+      var url = new URL(fig.querySelector('.q-src').getAttribute('href'), location.href).href;
+      var note = fig.querySelector('.q-copied');
       if (navigator.share) {
         navigator.share({ text: text, url: url }).catch(function () {});
         return;
       }
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text + '\n' + url).then(function () {
-          btn.textContent = 'Скопировано';
-          setTimeout(function () { btn.textContent = 'Поделиться'; }, 2000);
+          note.textContent = 'Скопировано';
+          setTimeout(function () { note.textContent = ''; }, 2000);
         });
       }
     });

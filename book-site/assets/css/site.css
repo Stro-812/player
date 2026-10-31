@@ -198,11 +198,33 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 @media (max-width: 760px) { .toc__list { columns: 1; } }
 
 /* Цитаты */
-.quotes { display: flex; flex-wrap: wrap; gap: 0 32px; margin-top: 48px; }
-.qcard { flex: 1 1 340px; min-width: 0; padding: 24px 0 28px; border-top: 2px solid var(--ink-on-coral); display: flex; flex-direction: column; justify-content: space-between; gap: 18px; }
-.qcard .quote { font-size: 32px; color: #FFFFFF; }
-.share { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; background: transparent; border: 2px solid var(--ink-on-coral); border-radius: 4px; color: var(--ink-on-coral); font-size: 14px; font-weight: 600; cursor: pointer; }
-.share:hover { background: rgba(0,0,0,0.08); }
+/* Цитаты: журнальная вёрстка. .lead/.em/.thin/.spaced — только внутри цитат: .lead занят вводными абзацами. */
+.quotes-grid { display: flex; flex-wrap: wrap; column-gap: 64px; margin-top: 48px; }
+.q { margin: 0; display: flex; flex-direction: column; gap: 20px; padding: 28px 0 36px;
+     border-top: 1px solid var(--ink-on-coral); }
+.q-full   { flex: 0 0 100%; }
+.q-half   { flex: 1 1 calc(50% - 32px); min-width: 0; }
+.q-offset { width: 66%; margin-left: 34%; }
+@media (max-width: 760px) { .q-half, .q-offset { flex: 0 0 100%; width: auto; margin-left: 0; } }
+.q blockquote { margin: 0; font-family: var(--display); font-weight: 700; color: #FFFFFF; }
+.q-xl   { font-size: clamp(60px, 9vw, 136px); font-weight: 800; text-transform: uppercase;
+          line-height: 0.9; max-width: 14ch; }
+.q-l    { font-size: clamp(40px, 4.6vw, 68px); line-height: 0.98; }
+.q-m    { font-size: clamp(36px, 4vw, 58px); line-height: 0.98; }
+.q-wide { font-size: clamp(36px, 4.4vw, 64px); line-height: 0.98; max-width: 24ch; }
+.q-s    { font-size: clamp(32px, 3.6vw, 52px); line-height: 1; }
+.q .em     { color: var(--ink-on-coral); font-weight: 900; text-transform: uppercase;
+             line-height: 0.92; font-size: var(--k, 1.5em); }
+.q .thin   { font-weight: 200; text-transform: uppercase; font-size: 1.6em; line-height: 0.92; }
+.q .lead   { display: block; margin: 0 0 8px; max-width: none; font-size: 0.6em; font-weight: 600; line-height: 1.1; }
+.q .spaced { letter-spacing: 0.3em; }
+.q-foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: auto; }
+.q-src { font-size: 15px; font-weight: 600; color: var(--ink-on-coral); text-decoration: underline; text-underline-offset: 3px; }
+.q-src:hover { color: #000000; }
+.q-actions { display: inline-flex; align-items: center; gap: 10px; flex: none; }
+.q-copied { font-size: 14px; font-weight: 600; color: var(--ink-on-coral); }
+.q-share { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 2px solid var(--ink-on-coral); border-radius: 50%; background: transparent; color: var(--ink-on-coral); cursor: pointer; }
+.q-share:hover { background: rgba(0, 0, 0, 0.08); }
 
 /* Слушать */
 .listen__intro { flex: 1 1 380px; min-width: 0; }
