@@ -64,7 +64,7 @@
   /* ---------- Цитаты: поделиться ---------- */
   Array.prototype.forEach.call(document.querySelectorAll('.q-share'), function (btn) {
     btn.addEventListener('click', function () {
-      var fig = btn.closest('.q');
+      var fig = btn.closest('.qcard');
       var n = btn.getAttribute('data-chapter');
       var quote = fig.querySelector('blockquote').textContent.replace(/\s+/g, ' ').trim();
       var text = quote + ' — Юрий Строфилов, «Не про бег», глава ' + n;
