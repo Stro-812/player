@@ -378,3 +378,16 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .chapter__pn a:hover { color: var(--coral-deep); }
 .chapter__next { text-align: right; align-items: flex-end; }
 @media (max-width: 560px) { .chapter__pn { grid-template-columns: 1fr; } .chapter__next { text-align: left; align-items: flex-start; } }
+
+/* Тренировки: приглашение (section#coach) */
+.coach      { display: flex; flex-wrap: wrap; align-items: center; gap: 56px 80px; }
+.coach-pic  { flex: 0 1 420px; min-width: 0; display: flex; justify-content: center; }
+.coach-pic img { width: 100%; max-width: 400px; height: auto; border-radius: 3px; transform: rotate(-1.5deg); }
+.coach-text { flex: 1 1 480px; min-width: 0; }
+@media (max-width: 760px) { .coach-pic { flex-basis: 100%; } .coach-pic img { max-width: 300px; } }
+.coach-quote { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(40px, 5vw, 72px); line-height: 0.95; color: #FFFFFF; }
+.coach-src { margin-top: 16px; font-family: var(--mono); font-size: 14px; color: var(--pale); }
+.coach-src a { color: inherit; }
+.coach-p { font-size: 19px; line-height: 1.6; color: var(--on-dark); max-width: 56ch; margin-top: 16px; }
+.coach-src + .coach-p { margin-top: 32px; }
+.coach-btn { margin-top: 32px; }
