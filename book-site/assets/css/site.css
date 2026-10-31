@@ -143,7 +143,10 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .star__place { font-family: var(--mono); font-size: 14px; color: var(--on-dark-muted); }
 .star p { font-size: 17px; line-height: 1.55; color: var(--on-dark); }
 .star .quote { font-size: 28px; margin-top: 4px; }
-.star__listen { margin-top: auto; padding-top: 14px; display: inline-flex; align-items: center; gap: 10px; color: var(--pale); font-size: 16px; font-weight: 600; min-height: 44px; }
+.star__links { margin-top: auto; padding-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px; }
+.star__read { display: inline-flex; align-items: center; min-height: 44px; color: var(--pale); font-size: 16px; font-weight: 600; }
+.star__read:hover { color: #FFFFFF; }
+.star__listen { display: inline-flex; align-items: center; gap: 10px; color: var(--pale); font-size: 16px; font-weight: 600; min-height: 44px; }
 .star__listen:hover { color: #FFFFFF; }
 .star__listen small { font-family: var(--mono); font-size: 14px; font-weight: 400; color: var(--on-dark-muted); }
 
@@ -166,7 +169,9 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .pair-q { margin-top: 32px; font-size: 20px; }
 .pair-show { margin-top: 16px; }
 .pair-answer p { margin-top: 24px; font-size: 20px; line-height: 1.55; max-width: 62ch; }
-.pair-listen { margin-top: 14px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--coral-deep); font-size: 17px; font-weight: 600; }
+.pair-links { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px; }
+.pair-read { display: inline-flex; align-items: center; min-height: 44px; color: var(--coral-deep); font-size: 17px; font-weight: 600; }
+.pair-listen { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--coral-deep); font-size: 17px; font-weight: 600; }
 .pair-listen small { font-family: var(--mono); font-size: 14px; font-weight: 400; color: var(--muted); }
 .pairs-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 40px; }
 .pairs-count { font-family: var(--mono); font-size: 14px; color: var(--muted); white-space: nowrap; }
@@ -182,11 +187,15 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
   .pairs-nav .btn { padding: 0 7px; font-size: 12px; gap: 4px; }
   .pairs-count { font-size: 11px; }
 }
-.all-pairs { margin-top: 56px; border-top: 1px solid var(--ink); padding-top: 20px; }
-.all-pairs h3 { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); margin-bottom: 12px; }
-.all-pairs p { font-size: 16px; line-height: 1.9; color: #4A3F3C; }
-.all-pairs a { color: inherit; text-decoration: underline; text-decoration-color: rgba(26, 19, 21, 0.25); text-underline-offset: 3px; }
-.all-pairs a:hover { color: var(--coral-deep); text-decoration-color: currentColor; }
+.toc { margin-top: 56px; border-top: 1px solid var(--ink); padding-top: 20px; }
+.toc h3 { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); margin-bottom: 16px; }
+.toc__list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 56px; }
+.toc__list li { break-inside: avoid; }
+.toc__list a { display: flex; gap: 14px; align-items: baseline; padding: 7px 0; font-size: 17px; line-height: 1.35; color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(26, 19, 21, 0.12); }
+.toc__list a:hover { color: var(--coral-deep); }
+.toc__no { flex: none; width: 2ch; font-family: var(--mono); font-size: 14px; color: var(--muted); text-align: right; }
+.toc__list .is-race a, .toc__list .is-race .toc__no { color: var(--coral-deep); font-weight: 600; }
+@media (max-width: 760px) { .toc__list { columns: 1; } }
 
 /* Цитаты */
 .quotes { display: flex; flex-wrap: wrap; gap: 0 32px; margin-top: 48px; }
@@ -317,3 +326,29 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .reader__end .btn--line { color: var(--ink); }
 
 [hidden] { display: none !important; }
+
+/* Страницы глав: glava/NN/ (собирает tools/build_chapters.py) */
+.chapter__no { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); }
+.chapter h1 { margin-top: 14px; font-size: clamp(48px, 9vw, 96px); overflow-wrap: break-word; hyphens: auto; }
+.chapter__listen { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.chapter__when { font-family: var(--mono); font-size: 14px; color: var(--muted); }
+.chapter__note { flex-basis: 100%; font-size: 15px; color: var(--muted); }
+.chapter .reader__body { margin-top: 40px; }
+.reader__body .gap { margin-top: 2em; }
+.reader__body .chapter__split { margin-top: 2.2em; margin-bottom: 0.6em; font-family: var(--mono); font-size: 16px; font-weight: 600; line-height: 1.5; color: var(--ink); letter-spacing: 0; text-transform: none; }
+.reader__body .chapter__case { font-family: var(--mono); font-size: 15px; line-height: 1.6; color: var(--muted); }
+.reader__body .chapter__case + .chapter__case { margin-top: 0.2em; }
+.reader__body .chapter__case + p:not(.chapter__case) { margin-top: 1.6em; }
+.reader__body blockquote { margin: 1.6em 0; padding-left: 20px; border-left: 3px solid var(--coral); }
+.reader__body blockquote p { font-style: italic; }
+.reader__body .chapter__verse { margin: 1.2em 0 1.2em 2em; }
+.reader__body .chapter__verse p { font-style: italic; margin-top: 0; }
+.reader__body ul { margin: 1em 0; padding-left: 1.3em; }
+.reader__body li { font-size: 20px; line-height: 1.7; }
+.reader__body li + li { margin-top: 0.5em; }
+.chapter__pn { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; margin-bottom: 28px; }
+.chapter__pn a { display: flex; flex-direction: column; gap: 4px; font-size: 18px; font-weight: 600; text-decoration: none; color: var(--ink); }
+.chapter__pn a span { font-family: var(--mono); font-size: 13px; font-weight: 400; color: var(--muted); }
+.chapter__pn a:hover { color: var(--coral-deep); }
+.chapter__next { text-align: right; align-items: flex-end; }
+@media (max-width: 560px) { .chapter__pn { grid-template-columns: 1fr; } .chapter__next { text-align: left; align-items: flex-start; } }
