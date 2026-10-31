@@ -53,7 +53,7 @@ window.NPB_DATA = {
    "n": 9,
    "title": "Лондон",
    "url": "https://your.s10.run/audio/09.mp3",
-   "duration": 4903.4
+   "duration": 4903.1
   },
   {
    "n": 10,
