@@ -391,3 +391,25 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .coach-p { font-size: 19px; line-height: 1.6; color: var(--on-dark); max-width: 56ch; margin-top: 16px; }
 .coach-src + .coach-p { margin-top: 32px; }
 .coach-btn { margin-top: 32px; }
+
+/* stro.coffee: последний раздел главной. Розовый — --pale из палитры сайта, на кнопке тёмный текст (контраст 9:1). */
+.coffee__grid { display: flex; flex-wrap: wrap; align-items: center; gap: 56px 80px; }
+.coffee__text { flex: 1 1 480px; min-width: 0; }
+.coffee__pic  { flex: 0 1 420px; min-width: 0; position: relative; display: flex; justify-content: center; }
+.coffee__pic img { width: 100%; max-width: 400px; height: auto; border-radius: 3px; transform: rotate(1.5deg); }
+.coffee__chip { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%) rotate(-2deg); margin: 0; padding: 8px 16px; border-radius: 3px;
+                background: var(--pale); color: var(--ink); font-family: var(--mono); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.coffee__eyebrow { font-family: var(--mono); font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pale); }
+.coffee__title { margin-top: 16px; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(48px, 6vw, 96px); line-height: 0.92; color: #FFFFFF; }
+.coffee__title span { color: var(--pale); }
+.coffee__p { margin-top: 28px; font-size: 19px; line-height: 1.6; color: var(--on-dark); max-width: 52ch; }
+.coffee__quote { margin: 28px 0 0; padding-left: 18px; border-left: 3px solid var(--pale); }
+.coffee__quote blockquote { font-family: var(--display); font-weight: 700; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.1; color: #FFFFFF; }
+.coffee__quote figcaption { margin-top: 8px; font-family: var(--mono); font-size: 14px; color: var(--pale); }
+.coffee__quote figcaption a { color: inherit; }
+.coffee__btn { margin-top: 32px; background: var(--pale); color: var(--ink); }
+.coffee__btn:hover { background: #FFFFFF; color: var(--ink); }
+@media (max-width: 760px) {
+  .coffee__pic { flex-basis: 100%; order: -1; }
+  .coffee__pic img { max-width: 300px; }
+}
