@@ -185,6 +185,8 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .all-pairs { margin-top: 56px; border-top: 1px solid var(--ink); padding-top: 20px; }
 .all-pairs h3 { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--coral-deep); margin-bottom: 12px; }
 .all-pairs p { font-size: 16px; line-height: 1.9; color: #4A3F3C; }
+.all-pairs a { color: inherit; text-decoration: underline; text-decoration-color: rgba(26, 19, 21, 0.25); text-underline-offset: 3px; }
+.all-pairs a:hover { color: var(--coral-deep); text-decoration-color: currentColor; }
 
 /* Цитаты */
 .quotes { display: flex; flex-wrap: wrap; gap: 0 32px; margin-top: 48px; }
