@@ -3,21 +3,22 @@
     "episode": 1,
     "chapter": 1,
     "title": "Марафон и поэты",
-    "start_seconds": 60.0,
-    "start": "00:01:00",
-    "confidence": 0.88,
+    "start_seconds": 58,
+    "start": "00:00:58",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 88,
       "title": 0,
       "prev_last_words": null
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 1,
     "chapter": 2,
     "title": "Гены и тонкая грань",
-    "start_seconds": 766.0,
+    "start_seconds": 766,
     "start": "00:12:46",
     "confidence": 1.0,
     "title_read": true,
@@ -25,7 +26,8 @@
       "first_words": 98,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 1,
@@ -33,13 +35,14 @@
     "title": "Пот и плацебо",
     "start_seconds": 833.9,
     "start": "00:13:53",
-    "confidence": 0.92,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 98,
       "title": 100,
       "prev_last_words": 92
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 2,
@@ -47,111 +50,119 @@
     "title": "Нью-Йорк",
     "start_seconds": 7.1,
     "start": "00:00:07",
-    "confidence": 0.93,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 96,
       "title": 100,
       "prev_last_words": 93
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 2,
     "chapter": 5,
     "title": "Центральный парк и теория разбитых окон",
-    "start_seconds": 1528.3,
-    "start": "00:25:28",
-    "confidence": 0.98,
+    "start_seconds": 1522,
+    "start": "00:25:22",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 98,
       "title": 0,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 3,
     "chapter": 6,
     "title": "Тренер и глубокий колодец",
-    "start_seconds": 20.3,
-    "start": "00:00:20",
-    "confidence": 0.37,
+    "start_seconds": 22,
+    "start": "00:00:22",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 100,
       "prev_last_words": 37
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 3,
     "chapter": 7,
     "title": "Техника бега и плотнейшая упаковка шаров",
-    "start_seconds": 538.1,
-    "start": "00:08:58",
+    "start_seconds": 549,
+    "start": "00:09:09",
     "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 99,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 3,
     "chapter": 8,
     "title": "Ящерицы и сила воли",
-    "start_seconds": 1270.9,
-    "start": "00:21:10",
+    "start_seconds": 1276,
+    "start": "00:21:16",
     "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 95,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 4,
     "chapter": 9,
     "title": "Термобелье и конопля",
-    "start_seconds": 0.0,
-    "start": "00:00:00",
-    "confidence": 0.92,
+    "start_seconds": 16,
+    "start": "00:00:16",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 92,
       "title": 0,
       "prev_last_words": 98
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 4,
     "chapter": 10,
     "title": "Бостон",
-    "start_seconds": 1091.4,
-    "start": "00:18:11",
-    "confidence": 0.94,
+    "start_seconds": 1100,
+    "start": "00:18:20",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 100,
       "prev_last_words": 94
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 4,
     "chapter": 11,
     "title": "Чаепитие и патриоты",
-    "start_seconds": 2909.6,
-    "start": "00:48:29",
-    "confidence": 0.99,
+    "start_seconds": 2908,
+    "start": "00:48:28",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 99,
       "title": 37,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 4,
@@ -159,27 +170,29 @@
     "title": "О полумарафоне и кредите на неотложные нужды",
     "start_seconds": 3207.8,
     "start": "00:53:27",
-    "confidence": 0.93,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 76,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
     "chapter": 13,
     "title": "Сестрорецк и революция",
-    "start_seconds": 0.0,
-    "start": "00:00:00",
-    "confidence": 0.97,
+    "start_seconds": 12,
+    "start": "00:00:12",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 97,
       "title": 0,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
@@ -187,27 +200,29 @@
     "title": "Фаренгейт и жена",
     "start_seconds": 675.7,
     "start": "00:11:15",
-    "confidence": 0.93,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 98,
       "title": 100,
       "prev_last_words": 93
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
     "chapter": 15,
     "title": "Кортизол и ракетный двигатель",
-    "start_seconds": 903.3,
-    "start": "00:15:03",
+    "start_seconds": 904,
+    "start": "00:15:04",
     "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 99,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
@@ -221,13 +236,14 @@
       "first_words": 100,
       "title": 88,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
     "chapter": 17,
     "title": "Пиво и кости",
-    "start_seconds": 1904.8,
+    "start_seconds": 1904,
     "start": "00:31:44",
     "confidence": 1.0,
     "title_read": true,
@@ -235,63 +251,68 @@
       "first_words": 100,
       "title": 92,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
     "chapter": 18,
     "title": "Инсулин и тридцатый километр",
-    "start_seconds": 2213.1,
-    "start": "00:36:53",
-    "confidence": 0.9,
+    "start_seconds": 2220,
+    "start": "00:37:00",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 90,
       "title": 0,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 5,
     "chapter": 19,
     "title": "Израиль и 4:16",
-    "start_seconds": 2933.1,
-    "start": "00:48:53",
-    "confidence": 0.95,
+    "start_seconds": 2942,
+    "start": "00:49:02",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 79,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
     "chapter": 20,
     "title": "Абебе Бикила и реванш",
-    "start_seconds": 12.4,
-    "start": "00:00:12",
-    "confidence": 0.9,
+    "start_seconds": 14,
+    "start": "00:00:14",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 99,
       "title": 95,
       "prev_last_words": 90
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
     "chapter": 21,
     "title": "Кроссовки и компромиссы",
-    "start_seconds": 1356.6,
-    "start": "00:22:36",
-    "confidence": 0.94,
+    "start_seconds": 1364,
+    "start": "00:22:44",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 77,
       "title": 100,
       "prev_last_words": 96
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
@@ -299,97 +320,104 @@
     "title": "Гатчина и сломанная электричка",
     "start_seconds": 2453.3,
     "start": "00:40:53",
-    "confidence": 0.91,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 97,
       "title": 100,
       "prev_last_words": 91
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
     "chapter": 23,
     "title": "Токио",
-    "start_seconds": 2847.0,
-    "start": "00:47:26",
-    "confidence": 0.8,
+    "start_seconds": 2850,
+    "start": "00:47:30",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 100,
       "title": 80,
       "prev_last_words": 80
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
     "chapter": 24,
     "title": "Теннисный мячик и саке",
-    "start_seconds": 4296.8,
-    "start": "01:11:36",
-    "confidence": 0.9,
+    "start_seconds": 4297,
+    "start": "01:11:37",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 100,
       "title": 32,
       "prev_last_words": 90
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 6,
     "chapter": 25,
     "title": "Утрехт и теория относительности",
-    "start_seconds": 4857.9,
-    "start": "01:20:57",
-    "confidence": 0.94,
+    "start_seconds": 4860,
+    "start": "01:21:00",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 95,
       "prev_last_words": 94
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
     "chapter": 26,
     "title": "Тюльпаны и пирамиды",
-    "start_seconds": 7.7,
-    "start": "00:00:07",
+    "start_seconds": 13,
+    "start": "00:00:13",
     "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 98,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
     "chapter": 27,
     "title": "Медленный бег и капилляры",
-    "start_seconds": 791.3,
-    "start": "00:13:11",
-    "confidence": 0.93,
+    "start_seconds": 799,
+    "start": "00:13:19",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 92,
       "prev_last_words": 93
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
     "chapter": 28,
     "title": "Пара порогов и немного о пульсе",
-    "start_seconds": 1366.1,
-    "start": "00:22:46",
+    "start_seconds": 1360,
+    "start": "00:22:40",
     "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 100,
       "title": 77,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
@@ -403,21 +431,23 @@
       "first_words": 99,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
     "chapter": 30,
     "title": "Пиво, калий и марафонский бег",
-    "start_seconds": 3974.3,
-    "start": "01:06:14",
-    "confidence": 0.94,
+    "start_seconds": 3969,
+    "start": "01:06:09",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 99,
       "title": 0,
       "prev_last_words": 94
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 7,
@@ -425,27 +455,29 @@
     "title": "Интервалы и урановые рудники",
     "start_seconds": 4347.1,
     "start": "01:12:27",
-    "confidence": 0.82,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 91,
       "title": 100,
       "prev_last_words": 82
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 8,
     "chapter": 32,
     "title": "Макароны и соглашение о разделе имущества",
-    "start_seconds": 0.0,
-    "start": "00:00:00",
-    "confidence": 0.91,
+    "start_seconds": 13,
+    "start": "00:00:13",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 95,
       "prev_last_words": 91
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 8,
@@ -459,7 +491,8 @@
       "first_words": 99,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 8,
@@ -467,70 +500,74 @@
     "title": "Мед без пчел и ниппель Данлопа",
     "start_seconds": 2200.5,
     "start": "00:36:40",
-    "confidence": 0.99,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 100,
       "prev_last_words": 99
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 9,
     "chapter": 35,
     "title": "Ризотто и керамические шарики",
-    "start_seconds": 14.0,
-    "start": "00:00:14",
-    "confidence": 0.95,
+    "start_seconds": 18,
+    "start": "00:00:18",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 100,
       "prev_last_words": 95
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 9,
     "chapter": 36,
     "title": "Пшеница и спасение человечества",
-    "start_seconds": 354.9,
-    "start": "00:05:54",
-    "confidence": 0.97,
+    "start_seconds": 357,
+    "start": "00:05:57",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 98,
       "title": 100,
       "prev_last_words": 97
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 9,
     "chapter": 37,
     "title": "Мясо и кормовой коэффициент",
-    "start_seconds": 2112.9,
-    "start": "00:35:12",
-    "confidence": 0.95,
+    "start_seconds": 2110,
+    "start": "00:35:10",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 100,
       "title": 68,
       "prev_last_words": 95
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 9,
     "chapter": 38,
     "title": "Лондон",
-    "start_seconds": 2314.0,
-    "start": "00:38:34",
-    "confidence": 0.93,
+    "start_seconds": 2359,
+    "start": "00:39:19",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 100,
       "prev_last_words": 93
     },
-    "note": "начало указано владельцем по прослушиванию: 38:34"
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 9,
@@ -538,48 +575,51 @@
     "title": "Кромвель и головы",
     "start_seconds": 4678.3,
     "start": "01:17:58",
-    "confidence": 0.99,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 88,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
-    "episode": 9,
+    "episode": 10,
     "chapter": 40,
     "title": "Письма и калоши",
-    "start_seconds": 4893.1,
-    "start": "01:21:33",
-    "confidence": 0.99,
+    "start_seconds": 14,
+    "start": "00:00:14",
+    "confidence": 1.0,
     "title_read": false,
     "match": {
       "first_words": 100,
       "title": 0,
       "prev_last_words": 99
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 10,
     "chapter": 41,
     "title": "Митохондрии и прогулки",
-    "start_seconds": 2024.7,
+    "start_seconds": 2024,
     "start": "00:33:44",
-    "confidence": 0.97,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 94,
       "title": 91,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 11,
     "chapter": 42,
     "title": "Ярославль и корова",
-    "start_seconds": 30.0,
-    "start": "00:00:30",
+    "start_seconds": 14,
+    "start": "00:00:14",
     "confidence": 1.0,
     "title_read": false,
     "match": {
@@ -587,7 +627,7 @@
       "title": null,
       "prev_last_words": 100
     },
-    "note": "проверено вручную: в звуке нет ни названия главы, ни её первых слов — эпизод 11 начинается с середины главы. Конец главы 41 — в эпизоде 10 на 73:51, последние слова главы 42 — в эпизоде 11 на 09:08."
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 11,
@@ -601,21 +641,23 @@
       "first_words": 98,
       "title": 100,
       "prev_last_words": 100
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 11,
     "chapter": 44,
     "title": "Дисклеймер и бег задом",
-    "start_seconds": 3133.0,
-    "start": "00:52:13",
-    "confidence": 0.88,
+    "start_seconds": 3142,
+    "start": "00:52:22",
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 99,
       "title": 100,
       "prev_last_words": 88
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   },
   {
     "episode": 11,
@@ -623,12 +665,13 @@
     "title": "Вундеркинды и счастье",
     "start_seconds": 3632.5,
     "start": "01:00:32",
-    "confidence": 0.93,
+    "confidence": 1.0,
     "title_read": true,
     "match": {
       "first_words": 100,
       "title": 95,
       "prev_last_words": 93
-    }
+    },
+    "note": "начало проверено на слух (разметка 02.11.2026)"
   }
 ]

@@ -25,14 +25,11 @@ audio = {c['chapter']: c for c in json.load(open('data/chapters-audio.json', enc
 
 def listen_target(n):
     """Эпизод и секунда начала главы для кнопки «Слушать эту главу»."""
-    if n == 40:
-        # Первые слова главы 40 звучат в конце эпизода 9, основная часть — в эпизоде 10.
-        return 10, 0
     c = audio[n]
     return c['episode'], int(c['start_seconds'])
 
 
-LISTEN_NOTE = {42: 'Запись начинается с середины главы'}
+LISTEN_NOTE = {}
 
 
 def clean_inline(s):

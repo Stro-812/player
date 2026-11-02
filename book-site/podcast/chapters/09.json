@@ -2,28 +2,24 @@
  "version": "1.2.0",
  "chapters": [
   {
-   "startTime": 14,
+   "startTime": 18,
    "title": "Ризотто и керамические шарики"
   },
   {
-   "startTime": 354,
+   "startTime": 357,
    "title": "Пшеница и спасение человечества"
   },
   {
-   "startTime": 2112,
+   "startTime": 2110,
    "title": "Мясо и кормовой коэффициент"
   },
   {
-   "startTime": 2314,
+   "startTime": 2359,
    "title": "Лондон"
   },
   {
    "startTime": 4678,
    "title": "Кромвель и головы"
-  },
-  {
-   "startTime": 4893,
-   "title": "Письма и калоши"
   }
  ]
 }
