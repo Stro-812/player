@@ -36,7 +36,7 @@
 <main class="rz">
   <h1>Разметка глав</h1>
   <ol class="rz__how">
-    <li>«▶ Слушать» играет 6 секунд с отмеченного времени.</li>
+    <li>«▶ Слушать» играет 10 секунд с отмеченного времени.</li>
     <li>Сдвигайте отметку кнопками, пока первое слово названия главы (или первые слова, если название не читается) не зазвучит сразу.</li>
     <li>Нажмите «Верно». Отметки сохраняются в этом браузере, можно прерваться и вернуться.</li>
     <li>В конце — «Скопировать таблицу» и пришлите её в чат.</li>
@@ -89,7 +89,7 @@
     function play(from) {
       clearTimeout(stopTimer);
       if (audio.getAttribute('src') !== r.url) audio.src = r.url;
-      var go = function () { audio.currentTime = Math.max(0, from); audio.play().catch(function () {}); stopTimer = setTimeout(function () { audio.pause(); }, (st.t - from + 6) * 1000); };
+      var go = function () { audio.currentTime = Math.max(0, from); audio.play().catch(function () {}); stopTimer = setTimeout(function () { audio.pause(); }, (st.t - from + 10) * 1000); };
       if (audio.readyState >= 1) go(); else audio.addEventListener('loadedmetadata', go, { once: true });
       audio.load && audio.readyState < 1 && audio.load();
     }
