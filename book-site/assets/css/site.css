@@ -321,6 +321,9 @@ h1, h2, h3, h4, p, blockquote, figure, ol, ul { margin: 0; }
 .student h3 { margin-top: 4px; font-size: 44px; line-height: 0.95; }
 .student p { font-size: 18px; }
 .student__meta { font-family: var(--mono); font-size: 14px; color: var(--muted); }
+.sub3 { margin: 72px 0 0; display: flex; flex-direction: column; gap: 18px; }
+.sub3 img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.sub3 figcaption { font-size: clamp(36px, 4.6vw, 64px); line-height: 0.95; }
 .s10 { margin-top: 72px; border-radius: 6px; padding: clamp(24px, 4vw, 40px); display: flex; flex-wrap: wrap; gap: 28px 56px; align-items: center; }
 .s10 > div { flex: 2 1 420px; min-width: 0; }
 .s10__name { font-family: var(--display); font-weight: 900; font-size: 56px; line-height: 0.9; text-transform: uppercase; }
